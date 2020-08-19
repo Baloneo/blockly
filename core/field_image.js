@@ -176,6 +176,7 @@ Blockly.FieldImage.prototype.configure_ = function(config) {
  * @package
  */
 Blockly.FieldImage.prototype.initView = function() {
+  console.log('调用了 FieldImage.prototype.initView')
   this.imageElement_ = /** @type {!SVGImageElement} */
       (Blockly.utils.dom.createSvgElement(
           'image',
