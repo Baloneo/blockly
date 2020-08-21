@@ -43,6 +43,28 @@
     var demoWorkspace = Blockly.inject('blocklyDiv',
         {media: '../../media/',
          toolbox: document.getElementById('toolbox')});
+
+
+    Blockly.Blocks['example_image3'] = {
+      init: function () {
+        this.appendDummyInput()
+
+                .appendField(new Blockly.FieldImage(
+                        require('@/assets/blank.png'),
+                        200,
+                        200,
+
+                ))
+        this.setColour('#ff9900')
+
+        this.setPreviousStatement(false)
+        this.setNextStatement(true)
+
+      }
+    };
+
+    Blockly.domToWorkspace()
+
   </script>
 
 </body>
